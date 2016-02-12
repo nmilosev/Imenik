@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestImenikXamarin.frmNew"
+             Title="Novi korisnik">
+  <ScrollView Orientation="Vertical">
+    <StackLayout Padding="10">
+      
+      <Label HorizontalOptions="Start" Text="Ime:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtIme"/>
+      <Label HorizontalOptions="Start" Text="Prezime:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtPrezime"/>
+      <Label HorizontalOptions="Start" Text="Nadimak:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtNadimak"/>
+      <Label HorizontalOptions="Start" Text="JMBG:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtJmbg"/>
+      <Label HorizontalOptions="Start" Text="Ulica:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtUlica"/>
+      <Label HorizontalOptions="Start" Text="Broj:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtBroj"/>
+      <Label HorizontalOptions="Start" Text="Mesto:" />
+      <Picker HorizontalOptions="FillAndExpand" x:Name="pMesto" />
+      <Label HorizontalOptions="Start" Text="Država:" />
+      <Picker HorizontalOptions="FillAndExpand" x:Name="pDrzava" />
+      <Label HorizontalOptions="Start" Text="Web sajt:" />
+      <Entry HorizontalOptions="FillAndExpand" Text="http://" x:Name="txtWeb"/>
+      <Label HorizontalOptions="Start" Text="Beleška:" />
+      <Entry HorizontalOptions="FillAndExpand" x:Name="txtBeleska"/>
+      <Label HorizontalOptions="Start" Text="Telefoni:" />
+      <Label HorizontalOptions="Start" x:Name="txtTelefoni" FontSize="18"/>
+      <StackLayout Orientation="Horizontal">
+        <Entry HorizontalOptions="FillAndExpand" x:Name="txtTelefon"/>
+        <Picker HorizontalOptions="FillAndExpand" x:Name="pTelefonTip" />
+        <Button Text="Dodaj telefon" Clicked="DodajTelefon" />
+      </StackLayout>
+      <Label HorizontalOptions="Start" Text="Email adrese:" />
+      <Label HorizontalOptions="Start" x:Name="txtEmailovi" FontSize="18"/>
+      <StackLayout Orientation="Horizontal">
+        <Entry HorizontalOptions="FillAndExpand" x:Name="txtEmail"/>
+        <Button Text="Dodaj email" Clicked="DodajEmail" />
+      </StackLayout>
+      <Label HorizontalOptions="Start" Text="Grupa:" />
+      <Picker HorizontalOptions="FillAndExpand" x:Name="pGrupa" /> 
+      <Label HorizontalOptions="Start" Text="IM podaci:" />
+      <Label HorizontalOptions="Start" x:Name="txtImovi" FontSize="18"/>
+      <StackLayout Orientation="Horizontal">
+        <Entry HorizontalOptions="FillAndExpand" x:Name="txtIm"/>
+        <Picker HorizontalOptions="FillAndExpand" x:Name="pImTip" />
+        <Button Text="Dodaj IM" Clicked="DodajIm" />
+      </StackLayout>
+
+      <Button HorizontalOptions="FillAndExpand" Text="Dodavanje novog kontakta" Clicked="Novi"></Button>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestImenikXamarin.frmRegistration"
+             Title="Registracija"
+             Icon="">
+  <StackLayout Padding="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+    <ActivityIndicator x:Name="Busy" IsRunning="false" />
+    <Label HorizontalOptions="Center" x:Name="txtStatus"></Label>
+    <Label HorizontalOptions="FillAndExpand">Username:</Label>
+    <Entry HorizontalOptions="FillAndExpand" x:Name="txtUsername"></Entry>
+    <Label HorizontalOptions="FillAndExpand">Password:</Label>
+    <Entry HorizontalOptions="FillAndExpand" IsPassword="True" x:Name="txtPassword"></Entry>
+    <Button HorizontalOptions="FillAndExpand" x:Name="btnRegister" Text="Registracija" Clicked="BtnRegister_Clicked"></Button>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestImenikXamarin.frmLogin"
+             Title="Imenik - SEDS 2016. - DMI PMF"
+             >
+  <StackLayout Padding="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+    <ActivityIndicator x:Name="Busy" IsRunning="false" />
+    <Label HorizontalOptions="Center" x:Name="txtStatus"></Label>
+    <Label HorizontalOptions="FillAndExpand">Username:</Label>
+    <Entry HorizontalOptions="FillAndExpand" x:Name="txtUsername"></Entry>
+    <Label HorizontalOptions="FillAndExpand">Password:</Label>
+    <Entry HorizontalOptions="FillAndExpand" IsPassword="True" x:Name="txtPassword"></Entry>
+    <Button HorizontalOptions="FillAndExpand" x:Name="btnLogin" Text="Login" Clicked="BtnLogin_Clicked"></Button>
+    <Button HorizontalOptions="FillAndExpand" x:Name="btnRegister" Text="Register" Clicked="BtnRegister_Clicked"></Button>
+  </StackLayout>
+</ContentPage>
