@@ -1,7 +1,7 @@
 Imenik
 ====================================
 
-A phonebook app I made for a university project.
+A phonebook app I made for an university project.
 
 License: MIT
 
@@ -12,7 +12,7 @@ Libraries
 
 Uses ASP .NET Core rc1-update1 for providing a REST service.
 
-Uses EF Core rc1 for Code Firse Table generation.
+Uses EF Core rc1 for Code First Table generation.
 
 Uses Xamarin.Forms for cross-platform native mobile application.
 
