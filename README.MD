@@ -1,7 +1,7 @@
 Imenik
 ====================================
 
-A phonebook app I made for an university project.
+A phonebook app I made for an university project (PMF Novi Sad).
 
 License: MIT
 
